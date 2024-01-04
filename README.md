@@ -77,6 +77,7 @@ logloss = nn.BCELoss()改成logloss = nn.BCEWithLogitsLoss()
 #python wav2lip_train.py --data_root /Data2/wyw/LRS2/lrs2_preprocessed/ --checkpoint_dir ./checkpoints --syncnet_checkpoint_path ./syncnet_checkpoints
 python wav2lip_train.py --data_root /Data2/wyw/data_288/own_preprocessed/ --checkpoint_dir ./checkpoints_own --syncnet_checkpoint_path ./syncnet_checkpoints_own
 
+# zhangzl: 不建议改
 wav2lip_train.py文件179行logloss = nn.BCELoss()改成logloss = nn.BCEWithLogitsLoss()
 
 
